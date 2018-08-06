@@ -1,0 +1,314 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bedates.guncelhaberler"
+    android:versionCode="2"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="15" />
+
+   <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/mylogo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".anasayfa"
+            android:label="@string/title_activity_anasayfa" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".haber"
+            android:icon="@drawable/haber"
+            android:label="@string/title_activity_haber" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.HABER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".koseyazarlari"
+            android:icon="@drawable/koseyazarlari"
+            android:label="@string/title_activity_koseyazarlari" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.KOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ekonomi"
+            android:icon="@drawable/ekonomi"
+            android:label="@string/title_activity_ekonomi" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.EKONOMI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".spor"
+            android:icon="@drawable/spor"
+            android:label="@string/title_activity_spor" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.SPOR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".magazin"
+            android:icon="@drawable/magazin"
+            android:label="@string/title_activity_magazin" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.MAGAZIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".kultursanat"
+            android:icon="@drawable/kultur_sanat"
+            android:label="@string/title_activity_kultursanat" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.KULTURSANAT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".saglik"
+            android:icon="@drawable/saglik"
+            android:label="@string/title_activity_saglik" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.SAGLIK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".yasam"
+            android:icon="@drawable/yasam"
+            android:label="@string/title_activity_yasam" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.YASAM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rssreader"
+            android:label="@string/title_activity_anasayfa" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rssreaderhaber"
+            android:label="@string/title_activity_haber" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERHABER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rsskoseyazarlari.rssreaderkoseyazarlarihurriyet"
+            android:icon="@drawable/hurriyet"
+            android:label="@string/title_activity_koseyazarlarihurriyet" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERKOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rsskoseyazarlari.rssreaderkyradikal"
+            android:icon="@drawable/radikal"
+            android:label="@string/title_activity_koseyazarlariradikal" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERKOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rsskoseyazarlari.rssreaderkysabah"
+            android:icon="@drawable/sabah"
+            android:label="@string/title_activity_koseyazarlarisabah" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERKOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rsskoseyazarlari.rssreaderkytaraf"
+            android:icon="@drawable/taraf"
+            android:label="@string/title_activity_koseyazarlaritaraf" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERKOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rsskoseyazarlari.rssreaderkyyenisafak"
+            android:icon="@drawable/yenisafak"
+            android:label="@string/title_activity_koseyazarlariyenisafak" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERKOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rsskoseyazarlari.rssreaderkyzaman"
+            android:icon="@drawable/zaman"
+            android:label="@string/title_activity_koseyazarlarizaman" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERKOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rsskoseyazarlari.rssreaderkyaksam"
+            android:icon="@drawable/aksam"
+            android:label="@string/title_activity_koseyazarlariaksam" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERKOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rsskoseyazarlari.rssreaderkymilliyet"
+            android:icon="@drawable/milliyet"
+            android:label="@string/title_activity_koseyazarlarimilliyet" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERKOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UsingMyWebview"
+            android:label="@string/title_activity_haber" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.USINGMYWEBVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".koseyazarlarilistesi"
+            android:icon="@drawable/koseyazarlari"
+            android:label="@string/title_activity_koseyazarlari" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.koseyazarlarilistesi" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rsskoseyazarlari.rssreaderkycumhuriyet"
+            android:icon="@drawable/cumhuriyet"
+            android:label="@string/title_activity_koseyazarlaricumhuriyet" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERKOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rsskoseyazarlari.rssreaderkybugun"
+            android:icon="@drawable/bugun"
+            android:label="@string/title_activity_koseyazarlaribugun" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERKOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rsskoseyazarlari.rssreaderkybirgun"
+            android:icon="@drawable/birgun"
+            android:label="@string/title_activity_koseyazarlaribirgun" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERKOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rsskoseyazarlari.rssreaderkytakvim"
+            android:icon="@drawable/takvim"
+            android:label="@string/title_activity_koseyazarlaritakvim" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERKOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rsskoseyazarlari.rssreaderkyvatan"
+            android:icon="@drawable/vatan"
+            android:label="@string/title_activity_koseyazarlarivatan" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERKOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rsskoseyazarlari.rssreaderkyevrensel"
+            android:icon="@drawable/evrensel"
+            android:label="@string/title_activity_koseyazarlarievrensel" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERKOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rsskoseyazarlari.rssreaderkystar"
+            android:icon="@drawable/evrensel"
+            android:label="@string/title_activity_koseyazarlarievrensel" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERKOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rsskoseyazarlari.rssreaderkyt24"
+            android:icon="@drawable/evrensel"
+            android:label="@string/title_activity_koseyazarlarit24" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.RSSREADERKOSEYAZARLARI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".teknoloji"
+            android:icon="@drawable/teknoloji"
+            android:label="@string/title_activity_teknoloji" >
+            <intent-filter>
+                <action android:name="com.bedates.guncelahberler.TEKNOLOJI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
